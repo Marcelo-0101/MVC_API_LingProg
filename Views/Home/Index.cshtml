@@ -1,0 +1,17 @@
+﻿@model IEnumerable<ClinVet.Models.Animal>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Animais</title>
+</head>
+<body>
+    <h1>Lista de Animais</h1>
+    <ul>
+        @foreach (var animal in Model)
+        {
+            <li>@animal.Name - @animal.Breed</li>
+        }
+    </ul>
+</body>
+</html>
